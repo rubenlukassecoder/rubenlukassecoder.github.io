@@ -37,6 +37,27 @@ body {
     background-color: #f8f8f8;
     color: rgb(0, 0, 0);
 }
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 30px;
+}
+
+.about img {
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+}
+
+.about > div {
+    max-width: 500px;
+}
 
 
 
