@@ -79,6 +79,36 @@ p {
     line-height: 1.5;
 }
 
+.sidebar {
+    width: 130px;
+    height: calc(100% - 48px);
+    position: fixed;
+    top: 48px;
+    left: 0;
+    background-color: black;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px 10px;
+    font-size: 16px;
+}
+
+.sidebar a:hover {
+    background-color: #ddd;
+    color: rgb(8, 7, 7);
+}
+
+.direction-main {
+    margin-left: 130px;
+}
+
+.direction-main {
+    margin-left: 200px;
+}
+
 .intro {
     margin-bottom: 40px;
 }
