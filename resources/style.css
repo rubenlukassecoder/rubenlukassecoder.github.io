@@ -102,11 +102,58 @@ p {
 }
 
 .direction-main {
-    margin-left: 130px;
+    margin-left: 200px;
+    padding: 40px 20px;
 }
 
-.direction-main {
-    margin-left: 200px;
+.direction-title {
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    margin-bottom: 25px;
+}
+
+.direction-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
+    gap: 20px;
+    width: min(800px, 80vw);
+    margin: 0 auto;
+}
+
+.direction-box {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+    min-height: 240px;
+    box-sizing: border-box;
+    transition: 0.2s ease-in-out;
+    position: relative;
+}
+
+.direction-box:hover {
+    background-color: rgba(255, 255, 255, 0.18);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+.direction-box h3 {
+    color: white;
+    font-family: sans-serif;
+    margin-top: 0;
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+.direction-box p {
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    margin: 0;
+    max-width: none;
 }
 
 .intro {
