@@ -23,94 +23,123 @@
   <h2 class="h2">Dit is de Dashboard pagina</h2>
 
   <table>
-    <tr>
-      <th>Quarter</th>
-      <th>Course</th>
-      <th>EC</th>
-      <th>Exam</th>
-      <th>Grade</th>
-    </tr>
+    <thead>
+      <tr>
+        <th>Quarter</th>
+        <th>Course</th>
+        <th>EC</th>
+        <th>Exam</th>
+        <th>Grade</th>
+      </tr>
+    </thead>
 
-    <tr>
-      <td rowspan="3">1</td>
-      <td>PCO</td>
-      <td>5</td>
-      <td>Presentatie</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>CSB</td>
-      <td>5</td>
-      <td>Schriftelijk</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>PBA</td>
-      <td>5</td>
-      <td>Exam</td>
-      <td>-</td>
-    </tr>
+    <tbody>
+      <tr class="quarter-row" data-quarter="1">
+        <td rowspan="3">1</td>
+        <td>PCO</td>
+        <td>5</td>
+        <td>Presentatie</td>
+        <td>-</td>
+      </tr>
+      <tr class="quarter-row" data-quarter="1">
+        <td>CSB</td>
+        <td>5</td>
+        <td>Schriftelijk</td>
+        <td>-</td>
+      </tr>
+      <tr class="quarter-row" data-quarter="1">
+        <td>PBA</td>
+        <td>5</td>
+        <td>Exam</td>
+        <td>-</td>
+      </tr>
+    </tbody>
 
-    <tr>
-      <td rowspan="3">2</td>
-      <td>First course</td>
-      <td>5</td>
-      <td>Exam</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Second course</td>
-      <td>5</td>
-      <td>Exam</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Third course</td>
-      <td>5</td>
-      <td>Exam</td>
-      <td>-</td>
-    </tr>
+    <tbody>
+      <tr class="quarter-row" data-quarter="2">
+        <td rowspan="3">2</td>
+        <td>First course</td>
+        <td>5</td>
+        <td>Exam</td>
+        <td>-</td>
+      </tr>
+      <tr class="quarter-row" data-quarter="2">
+        <td>Second course</td>
+        <td>5</td>
+        <td>Exam</td>
+        <td>-</td>
+      </tr>
+      <tr class="quarter-row" data-quarter="2">
+        <td>Third course</td>
+        <td>5</td>
+        <td>Exam</td>
+        <td>-</td>
+      </tr>
+    </tbody>
 
-    <tr>
-      <td rowspan="3">3</td>
-      <td>First course</td>
-      <td>5</td>
-      <td>Exam</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Second course</td>
-      <td>5</td>
-      <td>Exam</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Third course</td>
-      <td>5</td>
-      <td>Exam</td>
-      <td>-</td>
-    </tr>
+    <tbody>
+      <tr class="quarter-row" data-quarter="3">
+        <td rowspan="3">3</td>
+        <td>First course</td>
+        <td>5</td>
+        <td>Exam</td>
+        <td>-</td>
+      </tr>
+      <tr class="quarter-row" data-quarter="3">
+        <td>Second course</td>
+        <td>5</td>
+        <td>Exam</td>
+        <td>-</td>
+      </tr>
+      <tr class="quarter-row" data-quarter="3">
+        <td>Third course</td>
+        <td>5</td>
+        <td>Exam</td>
+        <td>-</td>
+      </tr>
+    </tbody>
 
-    <tr>
-      <td rowspan="3">4</td>
-      <td>First course</td>
-      <td>5</td>
-      <td>Exam</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Second course</td>
-      <td>5</td>
-      <td>Exam</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Third course</td>
-      <td>5</td>
-      <td>Exam</td>
-      <td>-</td>
-    </tr>
+    <tbody>
+      <tr class="quarter-row" data-quarter="4">
+        <td rowspan="3">4</td>
+        <td>First course</td>
+        <td>5</td>
+        <td>Exam</td>
+        <td>-</td>
+      </tr>
+      <tr class="quarter-row" data-quarter="4">
+        <td>Second course</td>
+        <td>5</td>
+        <td>Exam</td>
+        <td>-</td>
+      </tr>
+      <tr class="quarter-row" data-quarter="4">
+        <td>Third course</td>
+        <td>5</td>
+        <td>Exam</td>
+        <td>-</td>
+      </tr>
+    </tbody>
   </table>
+
+  <script>
+    const rows = document.querySelectorAll('.quarter-row');
+
+    rows.forEach((row) => {
+      row.addEventListener('mouseenter', () => {
+        const q = row.dataset.quarter;
+        rows.forEach((item) => {
+          if (item.dataset.quarter === q) {
+            item.classList.add('is-highlighted');
+          }
+        });
+      });
+
+      row.addEventListener('mouseleave', () => {
+        rows.forEach((item) => item.classList.remove('is-highlighted'));
+      });
+    });
+  </script>
 </body>
 
 </table>

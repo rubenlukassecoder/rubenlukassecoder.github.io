@@ -6,6 +6,11 @@ p, h2 {
     text-align: center;
 }
 
+.h2 {
+    text-align: center;
+    margin: 28px 0 20px;
+}
+
 body {
     background-color: rgb(34, 102, 148);
     margin:0%;
@@ -56,13 +61,29 @@ body {
     max-width: 500px;
 }
 
-table, th, td {
+table {
     border: 1px solid black;
     border-collapse: collapse;
+    color: white;
+    margin: 0 auto;
+    width: min(1100px, 82vw);
+    font-size: 18px;
 }
 
-tr:hover td {
+th, td {
+    border: 1px solid black;
+    padding: 12px 14px;
+    color: white;
+}
+
+.quarter-row.is-highlighted td {
     background-color: #D6EEEE;
+    color: black;
+}
+
+.quarter-row.is-highlighted td:first-child {
+    background-color: #D6EEEE;
+    color: black;
 }
 
 .about img {
@@ -102,34 +123,69 @@ p {
 }
 
 .direction-main {
-    margin-left: 200px;
-    padding: 40px 20px;
+    margin-left: 120px;
+    padding: 40px 30px 40px 10px;
 }
 
 .direction-title {
     color: white;
-    text-align: center;
+    text-align: left;
     font-family: sans-serif;
     margin-bottom: 25px;
+    margin-left: 0;
+    width: min(820px, 82vw);
+}
+
+.direction-layout {
+    display: flex;
+    gap: 26px;
+    align-items: flex-start;
+    width: min(1100px, 90vw);
+    margin-top: 18px;
+    justify-content: flex-start;
+}
+
+.direction-summary-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+    width: 340px;
+    flex-shrink: 0;
+    margin-top: 32px;
+    margin-left: 35px;
+}
+
+.direction-summary-title {
+    color: white;
+    font-family: sans-serif;
+    font-size: 22px;
+    margin: 0 0 6px 0;
+    text-align: left;
 }
 
 .direction-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(220px, 1fr));
-    gap: 20px;
-    width: min(800px, 80vw);
-    margin: 0 auto;
+    grid-template-columns: repeat(2, minmax(210px, 1fr));
+    gap: 18px;
+    flex: 1;
+    min-width: 0;
 }
 
 .direction-box {
     background-color: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 12px;
-    padding: 20px;
-    min-height: 240px;
+    padding: 18px 20px;
+    min-height: 250px;
     box-sizing: border-box;
     transition: 0.2s ease-in-out;
     position: relative;
+}
+
+.direction-box-small {
+    min-height: 260px;
+    width: 100%;
+    min-width: 240px;
 }
 
 .direction-box:hover {
@@ -146,14 +202,53 @@ p {
     text-align: left;
 }
 
+.direction-list {
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0;
+    padding-left: 22px;
+    text-align: left;
+}
+
+.direction-list li {
+    margin-bottom: 8px;
+}
+
 .direction-box p {
     color: white;
     font-family: sans-serif;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.7;
     text-align: left;
     margin: 0;
     max-width: none;
+}
+
+.direction-divider {
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.7);
+    width: min(1100px, 82vw);
+    margin: 30px 0 22px;
+}
+
+.direction-message-title {
+    color: white;
+    font-family: sans-serif;
+    font-size: 24px;
+    text-align: left;
+    margin: 0 0 12px;
+}
+
+.direction-message {
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: left;
+    max-width: 1100px;
+    margin: 0;
 }
 
 .intro {
