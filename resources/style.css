@@ -76,14 +76,31 @@ th, td {
     color: white;
 }
 
-.quarter-row.is-highlighted td {
-    background-color: #D6EEEE;
-    color: black;
-}
-
-.quarter-row.is-highlighted td:first-child {
-    background-color: #D6EEEE;
-    color: black;
+.dashboard:has(.row-highlight-1:hover) .row-highlight-1,
+.dashboard:has(.row-highlight-1:hover) .row-highlight-quarter-1,
+.dashboard:has(.row-highlight-2:hover) .row-highlight-2,
+.dashboard:has(.row-highlight-2:hover) .row-highlight-quarter-1,
+.dashboard:has(.row-highlight-3:hover) .row-highlight-3,
+.dashboard:has(.row-highlight-3:hover) .row-highlight-quarter-1,
+.dashboard:has(.row-highlight-4:hover) .row-highlight-4,
+.dashboard:has(.row-highlight-4:hover) .row-highlight-quarter-2,
+.dashboard:has(.row-highlight-5:hover) .row-highlight-5,
+.dashboard:has(.row-highlight-5:hover) .row-highlight-quarter-2,
+.dashboard:has(.row-highlight-6:hover) .row-highlight-6,
+.dashboard:has(.row-highlight-6:hover) .row-highlight-quarter-2,
+.dashboard:has(.row-highlight-7:hover) .row-highlight-7,
+.dashboard:has(.row-highlight-7:hover) .row-highlight-quarter-3,
+.dashboard:has(.row-highlight-8:hover) .row-highlight-8,
+.dashboard:has(.row-highlight-8:hover) .row-highlight-quarter-3,
+.dashboard:has(.row-highlight-9:hover) .row-highlight-9,
+.dashboard:has(.row-highlight-9:hover) .row-highlight-quarter-3,
+.dashboard:has(.row-highlight-10:hover) .row-highlight-10,
+.dashboard:has(.row-highlight-10:hover) .row-highlight-quarter-4,
+.dashboard:has(.row-highlight-11:hover) .row-highlight-11,
+.dashboard:has(.row-highlight-11:hover) .row-highlight-quarter-4,
+.dashboard:has(.row-highlight-12:hover) .row-highlight-12,
+.dashboard:has(.row-highlight-12:hover) .row-highlight-quarter-4 {
+    background-color: rgba(128, 128, 128, 0.6);
 }
 
 .about img {
@@ -102,11 +119,12 @@ p {
 /* alle dingen met de sidebar hierna */
 .sidebar {
     width: 130px;
-    height: calc(100% - 48px);
     position: fixed;
     top: 48px;
+    bottom: 0;
     left: 0;
     background-color: black;
+    z-index: 10;
 }
 
 .sidebar a {

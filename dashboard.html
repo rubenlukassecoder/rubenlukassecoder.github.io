@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>yow</title>
+  <title>Dashboard</title>
   <link rel="stylesheet" href="resources/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
@@ -22,105 +22,91 @@
 
   <h2 class="h2">Dit is de Dashboard pagina</h2>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Quarter</th>
-        <th>Course</th>
-        <th>EC</th>
-        <th>Exam</th>
-        <th>Grade</th>
-      </tr>
-    </thead>
-
-    <tbody>
-      <tr class="quarter-row" data-quarter="1">
-        <td rowspan="3">1</td>
-        <td>PCO</td>
-        <td>5</td>
-        <td>Presentatie</td>
-        <td>-</td>
-      </tr>
-      <tr class="quarter-row" data-quarter="1">
-        <td>CSB</td>
-        <td>5</td>
-        <td>Schriftelijk</td>
-        <td>-</td>
-      </tr>
-      <tr class="quarter-row" data-quarter="1">
-        <td>PBA</td>
-        <td>5</td>
-        <td>Exam</td>
-        <td>-</td>
-      </tr>
-    </tbody>
-
-    <tbody>
-      <tr class="quarter-row" data-quarter="2">
-        <td rowspan="3">2</td>
-        <td>First course</td>
-        <td>5</td>
-        <td>Exam</td>
-        <td>-</td>
-      </tr>
-      <tr class="quarter-row" data-quarter="2">
-        <td>Second course</td>
-        <td>5</td>
-        <td>Exam</td>
-        <td>-</td>
-      </tr>
-      <tr class="quarter-row" data-quarter="2">
-        <td>Third course</td>
-        <td>5</td>
-        <td>Exam</td>
-        <td>-</td>
-      </tr>
-    </tbody>
-
-    <tbody>
-      <tr class="quarter-row" data-quarter="3">
-        <td rowspan="3">3</td>
-        <td>First course</td>
-        <td>5</td>
-        <td>Exam</td>
-        <td>-</td>
-      </tr>
-      <tr class="quarter-row" data-quarter="3">
-        <td>Second course</td>
-        <td>5</td>
-        <td>Exam</td>
-        <td>-</td>
-      </tr>
-      <tr class="quarter-row" data-quarter="3">
-        <td>Third course</td>
-        <td>5</td>
-        <td>Exam</td>
-        <td>-</td>
-      </tr>
-    </tbody>
-
-    <tbody>
-      <tr class="quarter-row" data-quarter="4">
-        <td rowspan="3">4</td>
-        <td>First course</td>
-        <td>5</td>
-        <td>Exam</td>
-        <td>-</td>
-      </tr>
-      <tr class="quarter-row" data-quarter="4">
-        <td>Second course</td>
-        <td>5</td>
-        <td>Exam</td>
-        <td>-</td>
-      </tr>
-      <tr class="quarter-row" data-quarter="4">
-        <td>Third course</td>
-        <td>5</td>
-        <td>Exam</td>
-        <td>-</td>
-      </tr>
-    </tbody>
-  </table>
+  <table class="dashboard">
+                <tr>
+                    <th>Quarter</th>
+                    <th>Course</th>
+                    <th>EC</th>
+                    <th>Exam</th>
+                    <th>Grade</th>
+                </tr>
+                <tr>
+                    <td rowspan="3" class="row-highlight-quarter-1">1</td>
+                    <td class="row-highlight-1">PCO</td>
+                    <td class="row-highlight-1">5</td>
+                    <td class="row-highlight-1">Presentation</td>
+                    <td class="row-highlight-1">-</td>
+                </tr>
+                <tr>
+                    <td class="row-highlight-2">CSB</td>
+                    <td class="row-highlight-2">5</td>
+                    <td class="row-highlight-2">Case study exam</td>
+                    <td class="row-highlight-2">-</td>
+                </tr>
+                <tr>
+                    <td class="row-highlight-3">PBA</td>
+                    <td class="row-highlight-3">5</td>
+                    <td class="row-highlight-3">Assignment</td>
+                    <td class="row-highlight-3">-</td>
+                </tr>
+                <tr>
+                    <td rowspan="3" class="row-highlight-quarter-2">2</td>
+                    <td class="row-highlight-4">OOP</td>
+                    <td class="row-highlight-4">5</td>
+                    <td class="row-highlight-4">-</td>
+                    <td class="row-highlight-4">-</td>
+                </tr>
+                <tr>
+                    <td class="row-highlight-5">ATM</td>
+                    <td class="row-highlight-5">5</td>
+                    <td class="row-highlight-5">-</td>
+                    <td class="row-highlight-5">-</td>
+                </tr>
+                <tr>
+                    <td class="row-highlight-6">TPF</td>
+                    <td class="row-highlight-6">5</td>
+                    <td class="row-highlight-6">-</td>
+                    <td class="row-highlight-6">-</td>
+                </tr>
+                <tr>
+                    <td rowspan="3" class="row-highlight-quarter-3">3</td>
+                    <td class="row-highlight-7">SEB</td>
+                    <td class="row-highlight-7">5</td>
+                    <td class="row-highlight-7">-</td>
+                    <td class="row-highlight-7">-</td>
+                </tr>
+                <tr>
+                    <td class="row-highlight-8">FoD</td>
+                    <td class="row-highlight-8">5</td>
+                    <td class="row-highlight-8">-</td>
+                    <td class="row-highlight-8">-</td>
+                </tr>
+                <tr>
+                    <td class="row-highlight-9">RM</td>
+                    <td class="row-highlight-9">5</td>
+                    <td class="row-highlight-9">-</td>
+                    <td class="row-highlight-9">-</td>
+                </tr>
+                <tr>
+                    <td rowspan="3" class="row-highlight-quarter-4">4</td>
+                    <td class="row-highlight-10">WAD</td>
+                    <td class="row-highlight-10">5</td>
+                    <td class="row-highlight-10">-</td>
+                    <td class="row-highlight-10">-</td>
+                </tr>
+                <tr>
+                    <td class="row-highlight-11">DSB</td>
+                    <td class="row-highlight-11">5</td>
+                    <td class="row-highlight-11">-</td>
+                    <td class="row-highlight-11">-</td>
+                </tr>
+                <tr>
+                    <td class="row-highlight-12">ACS</td>
+                    <td class="row-highlight-12">5</td>
+                    <td class="row-highlight-12">-</td>
+                    <td class="row-highlight-12">-</td>
+                </tr>
+            </table>
 
   <script>
     const rows = document.querySelectorAll('.quarter-row');
