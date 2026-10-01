@@ -99,7 +99,7 @@ p {
     text-align: center;
     line-height: 1.5;
 }
-
+/* alle dingen met de sidebar hierna */
 .sidebar {
     width: 130px;
     height: calc(100% - 48px);
@@ -121,7 +121,7 @@ p {
     background-color: #ddd;
     color: rgb(8, 7, 7);
 }
-
+/* alle code voor de boxes */
 .direction-main {
     margin-left: 120px;
     padding: 40px 30px 40px 10px;
